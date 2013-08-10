@@ -1,0 +1,13 @@
+---
+# This Playbook deploys SSSD
+
+- hosts: sssd
+  vars_files:
+    - vars/main.yml
+    - vars/private.yml
+  user: $global_user
+  sudo: $global_use_sudo
+  tasks:
+    - include: tasks/main.yml
+  handlers:
+    - include: handlers/main.yml
