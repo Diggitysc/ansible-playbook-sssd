@@ -1,0 +1,8 @@
+# sssd
+sssd_domains: example.com 
+sssd_domain: example.com 
+sssd_ldap_uri: ldap://ldap.example.com # ie. ldap://ldap.example.com
+sssd_ldap_search_base: dc=example,dc=com # ie. dc=example,dc=com
+sssd_ldap_sudo_search_base: ou=sudoers,dc=example,dc=com # ie. ou=sudoers,dc=example,dc=com
+sssd_krb5_kdc_ip: kerberos.spectr.com # ie. kerberos.example.com
+sssd_krb5_realm: EXAMPLE.COM # ie. EXAMPLE.COM 
